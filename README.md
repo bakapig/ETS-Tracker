@@ -8,6 +8,7 @@ Real-time **ETS (Electric Train Service)** arrivals and live train map for Malay
 |-------|-------|----------|
 | **Backend** | Python FastAPI | GTFS static schedule, GTFS-RT vehicle positions (30s poll), ETA/delay estimate, REST API |
 | **Web** | Next.js + Tailwind + Leaflet | Station search, next arrivals, live map, AdSense placeholders |
+| **Android** | Flutter + flutter_map + AdMob | Same features as web, native Android app |
 
 ## Architecture
 
@@ -16,7 +17,7 @@ Malaysia Open API (GTFS Static + GTFS-RT)
         ↓  (backend polls every 30s)
    FastAPI + in-memory cache
         ↓
-   Next.js Web  →  (later) Flutter Android + AdMob
+   Next.js Web  →  Flutter Android + AdMob
 ```
 
 **Important:** Clients never call `api.data.gov.my` directly — the backend caches data and adds ETA logic.
@@ -45,6 +46,16 @@ npm run dev
 
 Open http://localhost:3000
 
+### 3. Android
+
+```powershell
+cd mobile
+flutter pub get
+flutter run
+```
+
+See [mobile/README.md](mobile/README.md) for emulator vs physical device API URLs.
+
 ## API endpoints
 
 | Method | Path | Description |
@@ -66,17 +77,18 @@ Open http://localhost:3000
 2. **Android** — Flutter app calling the same API + [AdMob](https://admob.google.com) banners/interstitials.
 3. **Premium** — RM4.90/mo: no ads, push delay alerts (Firebase Cloud Messaging).
 
-## Android app (Phase 2)
+## Android app
 
-Recommended: **Flutter** sharing the same REST API.
+Flutter app in `mobile/` — calls the same REST API as the web client.
 
+```powershell
+cd mobile
+flutter run
+# physical device on LAN:
+flutter run --dart-define=API_BASE_URL=http://YOUR_PC_IP:8000
 ```
-GET /api/stations?q=kl
-GET /api/stations/9000/arrivals
-GET /api/vehicles
-```
 
-Use `google_mobile_ads` for AdMob; poll arrivals every 30s.
+Details: [mobile/README.md](mobile/README.md)
 
 ## Deploy
 

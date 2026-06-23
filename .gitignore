@@ -27,3 +27,15 @@ backend/data/gtfs_extracted/
 # OS
 .DS_Store
 Thumbs.db
+
+# Flutter / mobile
+.tools/
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins-dependencies
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+mobile/.idea/
