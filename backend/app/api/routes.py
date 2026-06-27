@@ -1,6 +1,9 @@
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
-from app.gtfs.realtime import filter_ets_vehicles, realtime_store
+from app.deps import require_admin_key, require_client_api_key
+
+from app.gtfs.categories import CATEGORY_ORDER, enrich_vehicle
+from app.gtfs.realtime import realtime_store
 from app.gtfs.schedule import get_next_arrivals, search_stations
 from app.models import Arrival, HealthResponse, Station, Vehicle
 from app.services.state import app_state
@@ -27,10 +30,10 @@ async def health() -> HealthResponse:
     )
 
 
-@router.get("/stations", response_model=list[Station])
+@router.get("/stations", response_model=list[Station], dependencies=[Depends(require_client_api_key)])
 async def list_stations(
     q: str = Query("", description="Search by station name or ID"),
-    ets_only: bool = Query(True, description="Only ETS-served stations"),
+    ets_only: bool = Query(False, description="Only ETS-served stations"),
 ) -> list[Station]:
     if not app_state.dataset:
         raise HTTPException(503, "GTFS data not loaded yet")
@@ -46,7 +49,7 @@ async def list_stations(
     ]
 
 
-@router.get("/stations/{stop_id}", response_model=Station)
+@router.get("/stations/{stop_id}", response_model=Station, dependencies=[Depends(require_client_api_key)])
 async def get_station(stop_id: str) -> Station:
     if not app_state.dataset:
         raise HTTPException(503, "GTFS data not loaded yet")
@@ -61,11 +64,14 @@ async def get_station(stop_id: str) -> Station:
     )
 
 
-@router.get("/stations/{stop_id}/arrivals", response_model=list[Arrival])
+@router.get("/stations/{stop_id}/arrivals", response_model=list[Arrival], dependencies=[Depends(require_client_api_key)])
 async def station_arrivals(
     stop_id: str,
     limit: int = Query(10, ge=1, le=30),
-    route: str = Query("ETS", description="Route ID filter"),
+    route: str | None = Query(
+        None,
+        description="Route ID filter (e.g. ETS). Omit for all KTMB services at this stop.",
+    ),
 ) -> list[Arrival]:
     if not app_state.dataset:
         raise HTTPException(503, "GTFS data not loaded yet")
@@ -76,21 +82,45 @@ async def station_arrivals(
         stop_id,
         route_id=route,
         limit=limit,
-        live_trips=realtime_store.get_live_trips(),
+        live_trips=realtime_store.live_trips,
     )
 
 
-@router.get("/vehicles", response_model=list[Vehicle])
+@router.get("/vehicles", response_model=list[Vehicle], dependencies=[Depends(require_client_api_key)])
 async def list_vehicles(
-    ets_only: bool = Query(True, description="Filter to ETS trains only"),
+    ets_only: bool = Query(False, description="Filter to ETS trains only"),
+    category: str | None = Query(
+        None,
+        description="Filter by category: ets, komuter, intercity, shuttle, other",
+    ),
 ) -> list[Vehicle]:
-    vehicles = realtime_store.vehicles
+    vehicles = realtime_store.enriched_vehicles or [
+        enrich_vehicle(v, app_state.dataset) for v in realtime_store.vehicles
+    ]
     if ets_only:
-        vehicles = filter_ets_vehicles(vehicles, app_state.ets_trip_ids)
+        ets_ids = app_state.ets_trip_ids
+        vehicles = [
+            v
+            for v in vehicles
+            if (v.trip_id and v.trip_id in ets_ids)
+            or (v.label and "ETS" in v.label.upper())
+        ]
+
+    if category:
+        vehicles = [v for v in vehicles if v.route_category == category]
+
+    vehicles.sort(
+        key=lambda v: (
+            CATEGORY_ORDER.index(v.route_category)
+            if v.route_category in CATEGORY_ORDER
+            else len(CATEGORY_ORDER),
+            v.label or v.vehicle_id,
+        )
+    )
     return vehicles
 
 
-@router.post("/admin/refresh-static")
+@router.post("/admin/refresh-static", dependencies=[Depends(require_admin_key)])
 async def refresh_static() -> dict:
     await app_state.load_static(force_download=True)
     return {"status": "ok", "stations": len(app_state.dataset.stops) if app_state.dataset else 0}

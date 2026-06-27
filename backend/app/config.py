@@ -18,6 +18,11 @@ class Settings(BaseSettings):
 
     cors_origins: str = "http://localhost:3000,http://127.0.0.1:3000"
 
+    # Optional secrets (set via env / platform secret store — never commit real values)
+    api_key: str = ""  # If set, clients must send header X-API-Key
+    admin_api_key: str = ""  # Required for POST /api/admin/* (header X-Admin-Key)
+    data_gov_my_api_token: str = ""  # Optional Token from dataterbuka@jdn.gov.my
+
     @property
     def cors_origin_list(self) -> list[str]:
         return [o.strip() for o in self.cors_origins.split(",") if o.strip()]

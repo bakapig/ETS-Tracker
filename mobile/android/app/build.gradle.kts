@@ -23,6 +23,11 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // AdMob app ID — override in android/gradle.properties (ADMOB_APP_ID=ca-app-pub-…~…)
+        val admobAppId = (project.findProperty("ADMOB_APP_ID") as String?)
+            ?: "ca-app-pub-3940256099942544~3347511713"
+        manifestPlaceholders["admobAppId"] = admobAppId
     }
 
     buildTypes {

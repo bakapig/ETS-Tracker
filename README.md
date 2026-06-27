@@ -71,10 +71,10 @@ See [mobile/README.md](mobile/README.md) for emulator vs physical device API URL
 - Static schedule: `https://api.data.gov.my/gtfs-static/ktmb/`
 - Live positions: `https://api.data.gov.my/gtfs-realtime/vehicle-position/ktmb/` (updates ~30s)
 
-## Monetisation (next steps)
+## Monetisation
 
-1. **Web** — Replace `AdBanner` placeholders with [Google AdSense](https://adsense.google.com) after site approval.
-2. **Android** — Flutter app calling the same API + [AdMob](https://admob.google.com) banners/interstitials.
+1. **Web** — Google AdSense via `AdBanner` (set env vars in `web/.env.local`; see `web/.env.local.example`). Dynamic `ads.txt` is served at `/ads.txt`.
+2. **Android** — AdMob adaptive banners via `google_mobile_ads` (`ADMOB_APP_ID` in `gradle.properties`, banner units via `--dart-define`; see `mobile/README.md`).
 3. **Premium** — RM4.90/mo: no ads, push delay alerts (Firebase Cloud Messaging).
 
 ## Android app

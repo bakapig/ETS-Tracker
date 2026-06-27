@@ -12,6 +12,11 @@ class ApiClient {
 
   final http.Client _client;
 
+  Map<String, String> get _headers {
+    if (ApiConfig.apiKey.isEmpty) return const {};
+    return {'X-API-Key': ApiConfig.apiKey};
+  }
+
   Uri _uri(String path, [Map<String, String>? query]) {
     return Uri.parse('${ApiConfig.baseUrl}$path').replace(queryParameters: query);
   }
@@ -21,7 +26,7 @@ class ApiClient {
     Map<String, String>? query,
     required T Function(dynamic json) parse,
   }) async {
-    final response = await _client.get(_uri(path, query));
+    final response = await _client.get(_uri(path, query), headers: _headers);
     if (response.statusCode < 200 || response.statusCode >= 300) {
       throw ApiException(response.statusCode, path);
     }
@@ -31,7 +36,7 @@ class ApiClient {
   Future<List<Station>> searchStations(String query) {
     return _fetchJson(
       '/api/stations',
-      query: {'q': query, 'ets_only': 'true'},
+      query: {'q': query, 'ets_only': 'false'},
       parse: (json) =>
           (json as List).map((e) => Station.fromJson(e as Map<String, dynamic>)).toList(),
     );
@@ -56,7 +61,6 @@ class ApiClient {
   Future<List<Vehicle>> getVehicles() {
     return _fetchJson(
       '/api/vehicles',
-      query: {'ets_only': 'true'},
       parse: (json) =>
           (json as List).map((e) => Vehicle.fromJson(e as Map<String, dynamic>)).toList(),
     );

@@ -18,6 +18,7 @@ backend/data/*.pb
 backend/data/gtfs_extracted/
 .env
 .env.local
+backend/fly-keys.local.txt
 
 # IDE
 .idea/

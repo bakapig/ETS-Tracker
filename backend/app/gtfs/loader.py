@@ -8,8 +8,6 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import httpx
-
 from app.config import settings
 
 MYT = ZoneInfo("Asia/Kuala_Lumpur")
@@ -62,6 +60,9 @@ class CalendarRecord:
     end_date: date
 
 
+ETS_ROUTE_ID = "ETS"
+
+
 @dataclass
 class GtfsDataset:
     stops: dict[str, StopRecord] = field(default_factory=dict)
@@ -70,7 +71,33 @@ class GtfsDataset:
     stop_times_by_trip: dict[str, list[StopTimeRecord]] = field(default_factory=dict)
     stop_times_by_stop: dict[str, list[StopTimeRecord]] = field(default_factory=dict)
     calendar: dict[str, CalendarRecord] = field(default_factory=dict)
+    ets_trip_ids: frozenset[str] = field(default_factory=frozenset)
+    ets_stop_ids: frozenset[str] = field(default_factory=frozenset)
+    trip_destinations: dict[str, str] = field(default_factory=dict)
     loaded_at: datetime | None = None
+
+
+def _build_indexes(dataset: GtfsDataset) -> None:
+    ets_trips: set[str] = set()
+    ets_stops: set[str] = set()
+    destinations: dict[str, str] = {}
+
+    for trip_id, trip in dataset.trips.items():
+        times = dataset.stop_times_by_trip.get(trip_id, [])
+        if not times:
+            continue
+        last_stop_id = times[-1].stop_id
+        stop = dataset.stops.get(last_stop_id)
+        destinations[trip_id] = stop.stop_name if stop else last_stop_id
+        if trip.route_id != ETS_ROUTE_ID:
+            continue
+        ets_trips.add(trip_id)
+        for st in times:
+            ets_stops.add(st.stop_id)
+
+    dataset.ets_trip_ids = frozenset(ets_trips)
+    dataset.ets_stop_ids = frozenset(ets_stops)
+    dataset.trip_destinations = destinations
 
 
 def parse_gtfs_time(time_str: str, base_date: date) -> datetime:
@@ -96,7 +123,7 @@ def parse_gtfs_time(time_str: str, base_date: date) -> datetime:
 
 
 def service_runs_on(calendar: CalendarRecord, target: date) -> bool:
-    if target < calendar.start_date or target > calendar.end_date:
+    if target < calendar.start_date:
         return False
     weekday = target.weekday()
     flags = [
@@ -108,7 +135,20 @@ def service_runs_on(calendar: CalendarRecord, target: date) -> bool:
         calendar.saturday,
         calendar.sunday,
     ]
-    return flags[weekday]
+    if not flags[weekday]:
+        return False
+    if target <= calendar.end_date:
+        return True
+    # Stale GTFS calendar — still honour weekday flags until feed refreshes.
+    return True
+
+
+def calendar_stale(dataset: GtfsDataset, today: date | None = None) -> bool:
+    today = today or datetime.now(MYT).date()
+    if not dataset.calendar:
+        return True
+    latest_end = max(c.end_date for c in dataset.calendar.values())
+    return latest_end < today
 
 
 def _read_csv(text: str) -> list[dict[str, str]]:
@@ -181,19 +221,18 @@ def load_gtfs_from_zip_bytes(data: bytes) -> GtfsDataset:
             )
             dataset.calendar[cal.service_id] = cal
 
+    _build_indexes(dataset)
     dataset.loaded_at = datetime.now(MYT)
     return dataset
 
 
 async def download_gtfs_static() -> bytes:
-    async with httpx.AsyncClient(
-        headers={"User-Agent": settings.user_agent},
-        follow_redirects=True,
-        timeout=120.0,
-    ) as client:
-        response = await client.get(settings.gtfs_static_url)
-        response.raise_for_status()
-        return response.content
+    from app.http_client import get_http_client
+
+    client = get_http_client()
+    response = await client.get(settings.gtfs_static_url)
+    response.raise_for_status()
+    return response.content
 
 
 def save_gtfs_cache(data: bytes) -> Path:

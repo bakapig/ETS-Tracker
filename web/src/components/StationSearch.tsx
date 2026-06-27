@@ -51,7 +51,7 @@ export default function StationSearch({ onSelect, selectedId }: Props) {
   return (
     <div className="relative w-full">
       <label htmlFor="station-search" className="sr-only">
-        Search ETS station
+        Search KTMB station
       </label>
       <input
         id="station-search"

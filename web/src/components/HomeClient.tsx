@@ -55,10 +55,10 @@ export default function HomeClient() {
           Malaysia KTMB · Official GTFS
         </p>
         <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-          ETS Live Malaysia
+          KTMB Live Malaysia
         </h1>
         <p className="text-sm text-zinc-500">
-          Next ETS arrivals, live train map &amp; delay estimates
+          Live trains, station arrivals &amp; delay estimates across Malaysia
         </p>
       </header>
 
@@ -69,7 +69,10 @@ export default function HomeClient() {
       {station && (
         <section className="space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold">{station.stop_name}</h2>
+            <div>
+              <h2 className="text-lg font-semibold">{station.stop_name}</h2>
+              <p className="text-xs text-zinc-400">Upcoming KTMB arrivals</p>
+            </div>
             <button
               type="button"
               onClick={() => loadArrivals(station)}
@@ -92,10 +95,10 @@ export default function HomeClient() {
       )}
 
       <section className="space-y-2">
-        <h2 className="text-lg font-semibold">Live ETS map</h2>
+        <h2 className="text-lg font-semibold">Live KTMB map</h2>
         <LiveMap station={station} />
         <p className="text-xs text-zinc-400">
-          Positions refresh every 30s from Malaysia Open API
+          All KTMB trains by category · refreshes every 30s
         </p>
       </section>
 

@@ -1,0 +1,1858 @@
+{
+  "weekday_2103": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "05:27",
+    "service_number": "weekday_2103",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2107": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "06:02",
+    "service_number": "weekday_2107",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2111": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "06:32",
+    "service_number": "weekday_2111",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2113": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "06:47",
+    "service_number": "weekday_2113",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2115": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "07:02",
+    "service_number": "weekday_2115",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2119": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "07:32",
+    "service_number": "weekday_2119",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2127": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "SHAH ALAM",
+    "departure": "08:32",
+    "service_number": "weekday_2127",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2131": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "09:27",
+    "service_number": "weekday_2131",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2135": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "10:22",
+    "service_number": "weekday_2135",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2139": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "11:22",
+    "service_number": "weekday_2139",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2143": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "12:32",
+    "service_number": "weekday_2143",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2147": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "13:32",
+    "service_number": "weekday_2147",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2151": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "14:32",
+    "service_number": "weekday_2151",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2155": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "15:22",
+    "service_number": "weekday_2155",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2157": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "16:02",
+    "service_number": "weekday_2157",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2163": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "16:17",
+    "service_number": "weekday_2163",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2165": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "17:02",
+    "service_number": "weekday_2165",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2167": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "PEL. KLANG (S)",
+    "departure": "18:23",
+    "service_number": "weekday_2167",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2171": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "17:22",
+    "service_number": "weekday_2171",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2175": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "18:32",
+    "service_number": "weekday_2175",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2179": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "19:32",
+    "service_number": "weekday_2179",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2183": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "20:32",
+    "service_number": "weekday_2183",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2102": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "06:59",
+    "service_number": "weekday_2102",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2104": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "KL SENTRAL",
+    "departure": "05:55",
+    "service_number": "weekday_2104",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2110": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "06:25",
+    "service_number": "weekday_2110",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2112": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "KL SENTRAL",
+    "departure": "06:55",
+    "service_number": "weekday_2112",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2118": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "07:25",
+    "service_number": "weekday_2118",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2126": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "08:25",
+    "service_number": "weekday_2126",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2130": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "09:25",
+    "service_number": "weekday_2130",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2138": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "12:02",
+    "service_number": "weekday_2138",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2142": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "13:02",
+    "service_number": "weekday_2142",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2146": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "14:17",
+    "service_number": "weekday_2146",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2150": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "15:12",
+    "service_number": "weekday_2150",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2154": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "16:04",
+    "service_number": "weekday_2154",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2158": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "17:34",
+    "service_number": "weekday_2158",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2162": {
+    "route_id": "KA15_KD19",
+    "origin": "SHAH ALAM",
+    "destination": "TANJUNG MALIM",
+    "departure": "17:02",
+    "service_number": "weekday_2162",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2166": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "18:39",
+    "service_number": "weekday_2166",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2174": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "18:25",
+    "service_number": "weekday_2174",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2178": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "18:52",
+    "service_number": "weekday_2178",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2182": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "20:25",
+    "service_number": "weekday_2182",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2003": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "KL SENTRAL",
+    "departure": "06:30",
+    "service_number": "weekday_2003",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2007": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "07:35",
+    "service_number": "weekday_2007",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2011": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "08:35",
+    "service_number": "weekday_2011",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2013": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "09:05",
+    "service_number": "weekday_2013",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2015": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "10:00",
+    "service_number": "weekday_2015",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2019": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "11:00",
+    "service_number": "weekday_2019",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2027": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "13:00",
+    "service_number": "weekday_2027",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2031": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "14:00",
+    "service_number": "weekday_2031",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2035": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "15:00",
+    "service_number": "weekday_2035",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2045": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "KL SENTRAL",
+    "departure": "17:00",
+    "service_number": "weekday_2045",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2049": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "PULAU SEBANG (TAMPIN)",
+    "departure": "18:05",
+    "service_number": "weekday_2049",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2057": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "19:15",
+    "service_number": "weekday_2057",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2059": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "19:45",
+    "service_number": "weekday_2059",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2063": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "20:45",
+    "service_number": "weekday_2063",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2067": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "21:45",
+    "service_number": "weekday_2067",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2002": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "07:12",
+    "service_number": "weekday_2002",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2004": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "05:10",
+    "service_number": "weekday_2004",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2008": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "05:50",
+    "service_number": "weekday_2008",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2010": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "08:12",
+    "service_number": "weekday_2010",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2012": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "06:25",
+    "service_number": "weekday_2012",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2014": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "06:40",
+    "service_number": "weekday_2014",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2018": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "09:52",
+    "service_number": "weekday_2018",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2032": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "13:37",
+    "service_number": "weekday_2032",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2036": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "14:37",
+    "service_number": "weekday_2036",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2040": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "15:32",
+    "service_number": "weekday_2040",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2046": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "17:22",
+    "service_number": "weekday_2046",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2048": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "17:37",
+    "service_number": "weekday_2048",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2050": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "18:32",
+    "service_number": "weekday_2050",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2054": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "19:32",
+    "service_number": "weekday_2054",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2058": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "20:17",
+    "service_number": "weekday_2058",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2062": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "21:17",
+    "service_number": "weekday_2062",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2066": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "22:17",
+    "service_number": "weekday_2066",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekday_2070": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "23:02",
+    "service_number": "weekday_2070",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2303": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "05:32",
+    "service_number": "weekend_2303",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2307": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "06:02",
+    "service_number": "weekend_2307",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2311": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "06:32",
+    "service_number": "weekend_2311",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2315": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "07:02",
+    "service_number": "weekend_2315",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2319": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "07:32",
+    "service_number": "weekend_2319",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2327": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "SHAH ALAM",
+    "departure": "08:32",
+    "service_number": "weekend_2327",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2331": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "09:27",
+    "service_number": "weekend_2331",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2335": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "10:22",
+    "service_number": "weekend_2335",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2339": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "11:22",
+    "service_number": "weekend_2339",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2343": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "12:32",
+    "service_number": "weekend_2343",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2347": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "13:32",
+    "service_number": "weekend_2347",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2351": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "KL SENTRAL",
+    "departure": "14:32",
+    "service_number": "weekend_2351",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2355": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "15:22",
+    "service_number": "weekend_2355",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2363": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "16:17",
+    "service_number": "weekend_2363",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2371": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "17:22",
+    "service_number": "weekend_2371",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2375": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "18:32",
+    "service_number": "weekend_2375",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2379": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "19:32",
+    "service_number": "weekend_2379",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2383": {
+    "route_id": "KA15_KD19",
+    "origin": "TANJUNG MALIM",
+    "destination": "PEL. KLANG (S)",
+    "departure": "20:32",
+    "service_number": "weekend_2383",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2310": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "06:25",
+    "service_number": "weekend_2310",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2318": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "07:25",
+    "service_number": "weekend_2318",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2326": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "08:25",
+    "service_number": "weekend_2326",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2330": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "09:25",
+    "service_number": "weekend_2330",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2338": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "12:02",
+    "service_number": "weekend_2338",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2342": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "13:02",
+    "service_number": "weekend_2342",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2346": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "14:17",
+    "service_number": "weekend_2346",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2350": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "15:12",
+    "service_number": "weekend_2350",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2354": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "16:04",
+    "service_number": "weekend_2354",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2362": {
+    "route_id": "KA15_KD19",
+    "origin": "SHAH ALAM",
+    "destination": "TANJUNG MALIM",
+    "departure": "17:02",
+    "service_number": "weekend_2362",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2366": {
+    "route_id": "KA15_KD19",
+    "origin": "KL SENTRAL",
+    "destination": "TANJUNG MALIM",
+    "departure": "18:39",
+    "service_number": "weekend_2366",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2374": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "18:25",
+    "service_number": "weekend_2374",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2378": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "19:25",
+    "service_number": "weekend_2378",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2382": {
+    "route_id": "KA15_KD19",
+    "origin": "PEL. KLANG (S)",
+    "destination": "TANJUNG MALIM",
+    "departure": "20:25",
+    "service_number": "weekend_2382",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2207": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "08:05",
+    "service_number": "weekend_2207",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2211": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "09:05",
+    "service_number": "weekend_2211",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2215": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "10:00",
+    "service_number": "weekend_2215",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2219": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "11:00",
+    "service_number": "weekend_2219",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2223": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "12:00",
+    "service_number": "weekend_2223",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2243": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "16:30",
+    "service_number": "weekend_2243",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2259": {
+    "route_id": "KC05_KB18",
+    "origin": "BATU CAVES",
+    "destination": "MIDVALLEY",
+    "departure": "19:45",
+    "service_number": "weekend_2259",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2206": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "07:57",
+    "service_number": "weekend_2206",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2212": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "06:25",
+    "service_number": "weekend_2212",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2214": {
+    "route_id": "KC05_KB18",
+    "origin": "PULAU SEBANG (TAMPIN)",
+    "destination": "BATU CAVES",
+    "departure": "07:10",
+    "service_number": "weekend_2214",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2232": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "13:37",
+    "service_number": "weekend_2232",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2236": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "14:37",
+    "service_number": "weekend_2236",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2240": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "15:17",
+    "service_number": "weekend_2240",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2248": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "17:37",
+    "service_number": "weekend_2248",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2250": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "18:32",
+    "service_number": "weekend_2250",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2254": {
+    "route_id": "KC05_KB18",
+    "origin": "KL SENTRAL",
+    "destination": "BATU CAVES",
+    "departure": "19:32",
+    "service_number": "weekend_2254",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2258": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "20:17",
+    "service_number": "weekend_2258",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2262": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "21:17",
+    "service_number": "weekend_2262",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2266": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "22:17",
+    "service_number": "weekend_2266",
+    "match_type": "gtfs_trip_id"
+  },
+  "weekend_2270": {
+    "route_id": "KC05_KB18",
+    "origin": "SALAK SELATAN",
+    "destination": "BATU CAVES",
+    "departure": "23:02",
+    "service_number": "weekend_2270",
+    "match_type": "gtfs_trip_id"
+  },
+  "2940": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "05:20",
+    "service_number": "2940",
+    "match_type": "gtfs_trip_id"
+  },
+  "2944": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "06:25",
+    "service_number": "2944",
+    "match_type": "gtfs_trip_id"
+  },
+  "2946": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "06:55",
+    "service_number": "2946",
+    "match_type": "gtfs_trip_id"
+  },
+  "2948": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "07:35",
+    "service_number": "2948",
+    "match_type": "gtfs_trip_id"
+  },
+  "2952": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "08:35",
+    "service_number": "2952",
+    "match_type": "gtfs_trip_id"
+  },
+  "2958": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "10:35",
+    "service_number": "2958",
+    "match_type": "gtfs_trip_id"
+  },
+  "2964": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "12:35",
+    "service_number": "2964",
+    "match_type": "gtfs_trip_id"
+  },
+  "2968": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "14:35",
+    "service_number": "2968",
+    "match_type": "gtfs_trip_id"
+  },
+  "2970": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "15:05",
+    "service_number": "2970",
+    "match_type": "gtfs_trip_id"
+  },
+  "2972": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "15:35",
+    "service_number": "2972",
+    "match_type": "gtfs_trip_id"
+  },
+  "2976": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "16:35",
+    "service_number": "2976",
+    "match_type": "gtfs_trip_id"
+  },
+  "2978": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "17:05",
+    "service_number": "2978",
+    "match_type": "gtfs_trip_id"
+  },
+  "2980": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "17:35",
+    "service_number": "2980",
+    "match_type": "gtfs_trip_id"
+  },
+  "2982": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "18:05",
+    "service_number": "2982",
+    "match_type": "gtfs_trip_id"
+  },
+  "2984": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "18:40",
+    "service_number": "2984",
+    "match_type": "gtfs_trip_id"
+  },
+  "2986": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "19:05",
+    "service_number": "2986",
+    "match_type": "gtfs_trip_id"
+  },
+  "2988": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "19:35",
+    "service_number": "2988",
+    "match_type": "gtfs_trip_id"
+  },
+  "2994": {
+    "route_id": "100_47300",
+    "origin": "BUTTERWORTH",
+    "destination": "PADANG BESAR",
+    "departure": "21:35",
+    "service_number": "2994",
+    "match_type": "gtfs_trip_id"
+  },
+  "2941": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "05:20",
+    "service_number": "2941",
+    "match_type": "gtfs_trip_id"
+  },
+  "2943": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "05:40",
+    "service_number": "2943",
+    "match_type": "gtfs_trip_id"
+  },
+  "2945": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "06:00",
+    "service_number": "2945",
+    "match_type": "gtfs_trip_id"
+  },
+  "2947": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "06:20",
+    "service_number": "2947",
+    "match_type": "gtfs_trip_id"
+  },
+  "2951": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "07:35",
+    "service_number": "2951",
+    "match_type": "gtfs_trip_id"
+  },
+  "2955": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "08:35",
+    "service_number": "2955",
+    "match_type": "gtfs_trip_id"
+  },
+  "2959": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "10:35",
+    "service_number": "2959",
+    "match_type": "gtfs_trip_id"
+  },
+  "2963": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "12:35",
+    "service_number": "2963",
+    "match_type": "gtfs_trip_id"
+  },
+  "2967": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "14:35",
+    "service_number": "2967",
+    "match_type": "gtfs_trip_id"
+  },
+  "2969": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "15:05",
+    "service_number": "2969",
+    "match_type": "gtfs_trip_id"
+  },
+  "2971": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "15:35",
+    "service_number": "2971",
+    "match_type": "gtfs_trip_id"
+  },
+  "2975": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "16:35",
+    "service_number": "2975",
+    "match_type": "gtfs_trip_id"
+  },
+  "2979": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "17:05",
+    "service_number": "2979",
+    "match_type": "gtfs_trip_id"
+  },
+  "2981": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "17:35",
+    "service_number": "2981",
+    "match_type": "gtfs_trip_id"
+  },
+  "2985": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "18:35",
+    "service_number": "2985",
+    "match_type": "gtfs_trip_id"
+  },
+  "2987": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "19:05",
+    "service_number": "2987",
+    "match_type": "gtfs_trip_id"
+  },
+  "2991": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "19:35",
+    "service_number": "2991",
+    "match_type": "gtfs_trip_id"
+  },
+  "2997": {
+    "route_id": "100_47300",
+    "origin": "PADANG BESAR",
+    "destination": "BUTTERWORTH",
+    "departure": "21:35",
+    "service_number": "2997",
+    "match_type": "gtfs_trip_id"
+  },
+  "2901": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "05:30",
+    "service_number": "2901",
+    "match_type": "gtfs_trip_id"
+  },
+  "2903": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "06:00",
+    "service_number": "2903",
+    "match_type": "gtfs_trip_id"
+  },
+  "2905": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "07:05",
+    "service_number": "2905",
+    "match_type": "gtfs_trip_id"
+  },
+  "2907": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "09:10",
+    "service_number": "2907",
+    "match_type": "gtfs_trip_id"
+  },
+  "2909": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "12:10",
+    "service_number": "2909",
+    "match_type": "gtfs_trip_id"
+  },
+  "2911": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "14:10",
+    "service_number": "2911",
+    "match_type": "gtfs_trip_id"
+  },
+  "2913": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "16:10",
+    "service_number": "2913",
+    "match_type": "gtfs_trip_id"
+  },
+  "2915": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "17:40",
+    "service_number": "2915",
+    "match_type": "gtfs_trip_id"
+  },
+  "2917": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "18:25",
+    "service_number": "2917",
+    "match_type": "gtfs_trip_id"
+  },
+  "2919": {
+    "route_id": "100_9000",
+    "origin": "BUTTERWORTH",
+    "destination": "IPOH",
+    "departure": "19:10",
+    "service_number": "2919",
+    "match_type": "gtfs_trip_id"
+  },
+  "2900": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "04:40",
+    "service_number": "2900",
+    "match_type": "gtfs_trip_id"
+  },
+  "2902": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "05:45",
+    "service_number": "2902",
+    "match_type": "gtfs_trip_id"
+  },
+  "2904": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "06:20",
+    "service_number": "2904",
+    "match_type": "gtfs_trip_id"
+  },
+  "2906": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "08:55",
+    "service_number": "2906",
+    "match_type": "gtfs_trip_id"
+  },
+  "2908": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "10:55",
+    "service_number": "2908",
+    "match_type": "gtfs_trip_id"
+  },
+  "2910": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "12:55",
+    "service_number": "2910",
+    "match_type": "gtfs_trip_id"
+  },
+  "2912": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "14:55",
+    "service_number": "2912",
+    "match_type": "gtfs_trip_id"
+  },
+  "2914": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "16:50",
+    "service_number": "2914",
+    "match_type": "gtfs_trip_id"
+  },
+  "2916": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "17:45",
+    "service_number": "2916",
+    "match_type": "gtfs_trip_id"
+  },
+  "2918": {
+    "route_id": "100_9000",
+    "origin": "IPOH",
+    "destination": "BUTTERWORTH",
+    "departure": "18:35",
+    "service_number": "2918",
+    "match_type": "gtfs_trip_id"
+  },
+  "35": {
+    "route_id": "SH",
+    "origin": "KUALA LIPIS",
+    "destination": "GEMAS",
+    "departure": "12:00",
+    "service_number": "35",
+    "match_type": "gtfs_trip_id"
+  },
+  "51": {
+    "route_id": "SH",
+    "origin": "TUMPAT",
+    "destination": "KUALA LIPIS",
+    "departure": "03:50",
+    "service_number": "51",
+    "match_type": "gtfs_trip_id"
+  },
+  "53": {
+    "route_id": "SH",
+    "origin": "TUMPAT",
+    "destination": "GUA MUSANG",
+    "departure": "06:40",
+    "service_number": "53",
+    "match_type": "gtfs_trip_id"
+  },
+  "55": {
+    "route_id": "SH",
+    "origin": "TUMPAT",
+    "destination": "DABONG",
+    "departure": "09:45",
+    "service_number": "55",
+    "match_type": "gtfs_trip_id"
+  },
+  "57": {
+    "route_id": "SH",
+    "origin": "TUMPAT",
+    "destination": "GUA MUSANG",
+    "departure": "16:15",
+    "service_number": "57",
+    "match_type": "gtfs_trip_id"
+  },
+  "59": {
+    "route_id": "SH",
+    "origin": "GUA MUSANG",
+    "destination": "KUALA LIPIS",
+    "departure": "22:35",
+    "service_number": "59",
+    "match_type": "gtfs_trip_id"
+  },
+  "50": {
+    "route_id": "SH",
+    "origin": "KUALA LIPIS",
+    "destination": "GUA MUSANG",
+    "departure": "01:50",
+    "service_number": "50",
+    "match_type": "gtfs_trip_id"
+  },
+  "52": {
+    "route_id": "SH",
+    "origin": "GUA MUSANG",
+    "destination": "TUMPAT",
+    "departure": "04:00",
+    "service_number": "52",
+    "match_type": "gtfs_trip_id"
+  },
+  "56": {
+    "route_id": "SH",
+    "origin": "DABONG",
+    "destination": "TUMPAT",
+    "departure": "14:55",
+    "service_number": "56",
+    "match_type": "gtfs_trip_id"
+  },
+  "34": {
+    "route_id": "SH",
+    "origin": "GEMAS",
+    "destination": "KUALA LIPIS",
+    "departure": "10:35",
+    "service_number": "34",
+    "match_type": "gtfs_trip_id"
+  },
+  "58": {
+    "route_id": "SH",
+    "origin": "GUA MUSANG",
+    "destination": "TUMPAT",
+    "departure": "14:35",
+    "service_number": "58",
+    "match_type": "gtfs_trip_id"
+  },
+  "60": {
+    "route_id": "SH",
+    "origin": "KUALA LIPIS",
+    "destination": "TUMPAT",
+    "departure": "15:40",
+    "service_number": "60",
+    "match_type": "gtfs_trip_id"
+  },
+  "27": {
+    "route_id": "ERT",
+    "origin": "TUMPAT",
+    "destination": "JB SENTRAL",
+    "departure": "19:20",
+    "service_number": "27",
+    "match_type": "gtfs_trip_id"
+  },
+  "26": {
+    "route_id": "ERT",
+    "origin": "JB SENTRAL",
+    "destination": "TUMPAT",
+    "departure": "21:05",
+    "service_number": "26",
+    "match_type": "gtfs_trip_id"
+  },
+  "61": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "05:00",
+    "service_number": "61",
+    "match_type": "gtfs_trip_id"
+  },
+  "63": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "05:30",
+    "service_number": "63",
+    "match_type": "gtfs_trip_id"
+  },
+  "65": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "06:00",
+    "service_number": "65",
+    "match_type": "gtfs_trip_id"
+  },
+  "67": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "06:30",
+    "service_number": "67",
+    "match_type": "gtfs_trip_id"
+  },
+  "69": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "07:00",
+    "service_number": "69",
+    "match_type": "gtfs_trip_id"
+  },
+  "71": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "07:30",
+    "service_number": "71",
+    "match_type": "gtfs_trip_id"
+  },
+  "73": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "08:45",
+    "service_number": "73",
+    "match_type": "gtfs_trip_id"
+  },
+  "75": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "10:00",
+    "service_number": "75",
+    "match_type": "gtfs_trip_id"
+  },
+  "77": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "11:30",
+    "service_number": "77",
+    "match_type": "gtfs_trip_id"
+  },
+  "79": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "12:45",
+    "service_number": "79",
+    "match_type": "gtfs_trip_id"
+  },
+  "81": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "14:00",
+    "service_number": "81",
+    "match_type": "gtfs_trip_id"
+  },
+  "83": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "15:15",
+    "service_number": "83",
+    "match_type": "gtfs_trip_id"
+  },
+  "85": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "16:30",
+    "service_number": "85",
+    "match_type": "gtfs_trip_id"
+  },
+  "87": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "17:45",
+    "service_number": "87",
+    "match_type": "gtfs_trip_id"
+  },
+  "89": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "19:00",
+    "service_number": "89",
+    "match_type": "gtfs_trip_id"
+  },
+  "91": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "20:15",
+    "service_number": "91",
+    "match_type": "gtfs_trip_id"
+  },
+  "93": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "21:30",
+    "service_number": "93",
+    "match_type": "gtfs_trip_id"
+  },
+  "95": {
+    "route_id": "ST",
+    "origin": "JB SENTRAL",
+    "destination": "WOODLANDS",
+    "departure": "22:45",
+    "service_number": "95",
+    "match_type": "gtfs_trip_id"
+  },
+  "72": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "08:30",
+    "service_number": "72",
+    "match_type": "gtfs_trip_id"
+  },
+  "74": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "09:45",
+    "service_number": "74",
+    "match_type": "gtfs_trip_id"
+  },
+  "76": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "11:00",
+    "service_number": "76",
+    "match_type": "gtfs_trip_id"
+  },
+  "78": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "12:30",
+    "service_number": "78",
+    "match_type": "gtfs_trip_id"
+  },
+  "80": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "13:45",
+    "service_number": "80",
+    "match_type": "gtfs_trip_id"
+  },
+  "82": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "15:00",
+    "service_number": "82",
+    "match_type": "gtfs_trip_id"
+  },
+  "84": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "16:15",
+    "service_number": "84",
+    "match_type": "gtfs_trip_id"
+  },
+  "86": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "17:30",
+    "service_number": "86",
+    "match_type": "gtfs_trip_id"
+  },
+  "88": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "18:45",
+    "service_number": "88",
+    "match_type": "gtfs_trip_id"
+  },
+  "90": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "20:00",
+    "service_number": "90",
+    "match_type": "gtfs_trip_id"
+  },
+  "92": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "21:15",
+    "service_number": "92",
+    "match_type": "gtfs_trip_id"
+  },
+  "94": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "22:30",
+    "service_number": "94",
+    "match_type": "gtfs_trip_id"
+  },
+  "96": {
+    "route_id": "ST",
+    "origin": "WOODLANDS",
+    "destination": "JB SENTRAL",
+    "departure": "23:45",
+    "service_number": "96",
+    "match_type": "gtfs_trip_id"
+  },
+  "9171": {
+    "route_id": "ETS",
+    "origin": "BUTTERWORTH",
+    "destination": "KL SENTRAL",
+    "departure": "06:10",
+    "service_number": "EP9123",
+    "match_type": "pdf_override"
+  },
+  "9173": {
+    "route_id": "ETS",
+    "origin": "BUTTERWORTH",
+    "destination": "KL SENTRAL",
+    "departure": "10:00",
+    "service_number": "EP9123",
+    "match_type": "pdf_override"
+  },
+  "9273": {
+    "route_id": "ETS",
+    "origin": "PADANG BESAR",
+    "destination": "KL SENTRAL",
+    "departure": "11:05",
+    "service_number": "EP9123",
+    "match_type": "pdf_override"
+  },
+  "9176": {
+    "route_id": "ETS",
+    "origin": "KL SENTRAL",
+    "destination": "BUTTERWORTH",
+    "departure": "14:45",
+    "service_number": "EP9136",
+    "match_type": "pdf_override"
+  },
+  "9178": {
+    "route_id": "ETS",
+    "origin": "KL SENTRAL",
+    "destination": "BUTTERWORTH",
+    "departure": "19:55",
+    "service_number": "EP9138",
+    "match_type": "pdf_override"
+  },
+  "9052": {
+    "route_id": "ETS",
+    "origin": "KL SENTRAL",
+    "destination": "IPOH",
+    "departure": "15:00",
+    "service_number": "EG9052",
+    "match_type": "pdf_kl_exact"
+  }
+}

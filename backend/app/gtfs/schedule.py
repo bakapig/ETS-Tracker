@@ -9,6 +9,7 @@ from app.gtfs.loader import (
     parse_gtfs_time,
     service_runs_on,
 )
+from app.gtfs.trip_numbers import resolve_service_number
 from app.models import Arrival
 
 MYT = ZoneInfo("Asia/Kuala_Lumpur")
@@ -25,12 +26,7 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 
 def _trip_destination(dataset: GtfsDataset, trip_id: str) -> str:
-    times = dataset.stop_times_by_trip.get(trip_id, [])
-    if not times:
-        return "Unknown"
-    last_stop_id = times[-1].stop_id
-    stop = dataset.stops.get(last_stop_id)
-    return stop.stop_name if stop else last_stop_id
+    return dataset.trip_destinations.get(trip_id, "Unknown")
 
 
 def _delay_status(delay_minutes: int | None) -> str:
@@ -44,18 +40,15 @@ def _delay_status(delay_minutes: int | None) -> str:
 
 
 def get_ets_stations(dataset: GtfsDataset) -> list[str]:
-    stop_ids: set[str] = set()
-    for trip_id, trip in dataset.trips.items():
-        if trip.route_id != ETS_ROUTE_ID:
-            continue
-        for st in dataset.stop_times_by_trip.get(trip_id, []):
-            stop_ids.add(st.stop_id)
-    return sorted(stop_ids, key=lambda sid: dataset.stops[sid].stop_name if sid in dataset.stops else sid)
+    return sorted(
+        dataset.ets_stop_ids,
+        key=lambda sid: dataset.stops[sid].stop_name if sid in dataset.stops else sid,
+    )
 
 
 def search_stations(dataset: GtfsDataset, query: str, ets_only: bool = True) -> list:
     q = query.strip().lower()
-    ets_stops = set(get_ets_stations(dataset)) if ets_only else None
+    ets_stops = dataset.ets_stop_ids if ets_only else None
     results = []
     for stop in dataset.stops.values():
         if ets_stops is not None and stop.stop_id not in ets_stops:
@@ -70,7 +63,7 @@ def get_next_arrivals(
     dataset: GtfsDataset,
     stop_id: str,
     *,
-    route_id: str = ETS_ROUTE_ID,
+    route_id: str | None = None,
     limit: int = 10,
     now: datetime | None = None,
     live_trips: dict[str, dict] | None = None,
@@ -80,59 +73,82 @@ def get_next_arrivals(
     live_trips = live_trips or {}
     candidates: list[tuple[datetime, Arrival]] = []
 
-    for st in dataset.stop_times_by_stop.get(stop_id, []):
-        trip = dataset.trips.get(st.trip_id)
-        if not trip or trip.route_id != route_id:
-            continue
-        cal = dataset.calendar.get(trip.service_id)
-        if not cal or not service_runs_on(cal, today):
-            continue
+    for day_offset in range(3):
+        if len(candidates) >= limit:
+            break
+        service_date = today + timedelta(days=day_offset)
+        service_date_str = None if day_offset == 0 else service_date.isoformat()
 
-        route = dataset.routes.get(trip.route_id)
-        scheduled_arr = parse_gtfs_time(st.arrival_time, today)
-        scheduled_dep = parse_gtfs_time(st.departure_time, today)
+        for st in dataset.stop_times_by_stop.get(stop_id, []):
+            trip = dataset.trips.get(st.trip_id)
+            if not trip:
+                continue
+            if route_id is not None and trip.route_id != route_id:
+                continue
+            cal = dataset.calendar.get(trip.service_id)
+            if not cal or not service_runs_on(cal, service_date):
+                continue
 
-        # Include trains in the next 12 hours, or slightly past (for delay display)
-        if scheduled_arr < now - timedelta(minutes=30):
-            continue
-        if scheduled_arr > now + timedelta(hours=12):
-            continue
+            route = dataset.routes.get(trip.route_id)
+            scheduled_arr = parse_gtfs_time(st.arrival_time, service_date)
+            scheduled_dep = parse_gtfs_time(st.departure_time, service_date)
 
-        live = live_trips.get(st.trip_id)
-        delay_minutes: int | None = None
-        estimated_arrival: str | None = None
-        is_live = False
-        vehicle_label = None
-        status = "scheduled"
-
-        if live:
-            is_live = True
-            vehicle_label = live.get("label")
-            delay_minutes = _estimate_delay_minutes(dataset, st.trip_id, stop_id, live, scheduled_arr, now)
-            if delay_minutes is not None:
-                eta = scheduled_arr + timedelta(minutes=delay_minutes)
-                estimated_arrival = eta.strftime("%H:%M")
-                status = _delay_status(delay_minutes)
+            if day_offset == 0:
+                if scheduled_arr < now - timedelta(minutes=30):
+                    continue
+                if scheduled_arr > now + timedelta(hours=18):
+                    continue
             else:
-                status = "live"
+                # Next service days: include from first trains of that day.
+                if scheduled_arr < datetime(
+                    service_date.year,
+                    service_date.month,
+                    service_date.day,
+                    0,
+                    0,
+                    tzinfo=MYT,
+                ):
+                    continue
 
-        arrival = Arrival(
-            trip_id=st.trip_id,
-            route_short_name=route.route_short_name if route else route_id,
-            route_long_name=route.route_long_name if route else "",
-            destination=_trip_destination(dataset, st.trip_id),
-            scheduled_arrival=scheduled_arr.strftime("%H:%M"),
-            scheduled_departure=scheduled_dep.strftime("%H:%M"),
-            estimated_arrival=estimated_arrival,
-            delay_minutes=delay_minutes,
-            status=status,
-            is_live=is_live,
-            vehicle_label=vehicle_label,
-        )
-        sort_time = scheduled_arr
-        if delay_minutes is not None:
-            sort_time = scheduled_arr + timedelta(minutes=delay_minutes)
-        candidates.append((sort_time, arrival))
+            live = live_trips.get(st.trip_id) if day_offset == 0 else None
+            delay_minutes: int | None = None
+            estimated_arrival: str | None = None
+            is_live = False
+            vehicle_label = None
+            status = "scheduled"
+
+            if live:
+                is_live = True
+                vehicle_label = live.get("label")
+                delay_minutes = _estimate_delay_minutes(
+                    dataset, st.trip_id, stop_id, live, scheduled_arr, now
+                )
+                if delay_minutes is not None:
+                    eta = scheduled_arr + timedelta(minutes=delay_minutes)
+                    estimated_arrival = eta.strftime("%H:%M")
+                    status = _delay_status(delay_minutes)
+                else:
+                    status = "live"
+
+            arrival = Arrival(
+                trip_id=st.trip_id,
+                service_number=resolve_service_number(st.trip_id, trip.route_id),
+                route_short_name=route.route_short_name if route else (trip.route_id or ""),
+                route_long_name=route.route_long_name if route else "",
+                destination=_trip_destination(dataset, st.trip_id),
+                scheduled_arrival=scheduled_arr.strftime("%H:%M"),
+                scheduled_departure=scheduled_dep.strftime("%H:%M"),
+                service_date=service_date_str,
+                estimated_arrival=estimated_arrival,
+                delay_minutes=delay_minutes,
+                status=status,
+                is_live=is_live,
+                vehicle_label=vehicle_label,
+            )
+            sort_time = scheduled_arr
+            if delay_minutes is not None:
+                sort_time = scheduled_arr + timedelta(minutes=delay_minutes)
+            candidates.append((sort_time, arrival))
 
     candidates.sort(key=lambda x: x[0])
     return [a for _, a in candidates[:limit]]

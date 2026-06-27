@@ -16,7 +16,7 @@ class EtsLiveApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ETS Live Malaysia',
+      title: 'KTMB Live Malaysia',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),

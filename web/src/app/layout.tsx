@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import AdSenseScript from "@/components/AdSenseScript";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ETS Live Malaysia — Real-time KTMB Arrivals",
+  title: "KTMB Live Malaysia — Real-time Train Arrivals & Map",
   description:
-    "Track ETS train arrivals, delays and live positions across Malaysia using official KTMB GTFS data.",
+    "Track KTMB train arrivals, delays and live positions across Malaysia using official GTFS data.",
 };
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+        <AdSenseScript />
         {children}
         <footer className="mt-auto border-t border-zinc-200 px-4 py-4 text-center text-xs text-zinc-400 dark:border-zinc-800">
           Data from{" "}

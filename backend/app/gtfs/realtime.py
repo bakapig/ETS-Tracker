@@ -3,10 +3,10 @@ from __future__ import annotations
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-import httpx
 from google.transit import gtfs_realtime_pb2
 
 from app.config import settings
+from app.gtfs.trip_numbers import normalize_speed_kmh
 from app.models import Vehicle
 
 MYT = ZoneInfo("Asia/Kuala_Lumpur")
@@ -15,12 +15,14 @@ MYT = ZoneInfo("Asia/Kuala_Lumpur")
 class RealtimeStore:
     def __init__(self) -> None:
         self.vehicles: list[Vehicle] = []
+        self.enriched_vehicles: list[Vehicle] = []
         self.trip_index: dict[str, dict] = {}
         self.last_fetch: datetime | None = None
         self.last_error: str | None = None
 
-    def get_live_trips(self) -> dict[str, dict]:
-        return dict(self.trip_index)
+    @property
+    def live_trips(self) -> dict[str, dict]:
+        return self.trip_index
 
 
 realtime_store = RealtimeStore()
@@ -34,14 +36,12 @@ def _decode_feed(data: bytes) -> gtfs_realtime_pb2.FeedMessage:
 
 async def fetch_vehicle_positions() -> None:
     try:
-        async with httpx.AsyncClient(
-            headers={"User-Agent": settings.user_agent},
-            follow_redirects=True,
-            timeout=30.0,
-        ) as client:
-            response = await client.get(settings.gtfs_realtime_url)
-            response.raise_for_status()
-            data = response.content
+        from app.http_client import get_http_client
+
+        client = get_http_client()
+        response = await client.get(settings.gtfs_realtime_url)
+        response.raise_for_status()
+        data = response.content
 
         feed = _decode_feed(data)
         vehicles: list[Vehicle] = []
@@ -58,7 +58,7 @@ async def fetch_vehicle_positions() -> None:
 
             trip_id = trip.trip_id if trip and trip.trip_id else None
             route_id = trip.route_id if trip and trip.route_id else None
-            speed_kmh = pos.speed * 3.6 if pos.speed else None
+            speed_kmh = normalize_speed_kmh(pos.speed if pos.speed else None)
 
             vehicle = Vehicle(
                 vehicle_id=entity.id or (vp.vehicle.id if vp.HasField("vehicle") else "unknown"),

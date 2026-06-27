@@ -80,12 +80,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 4),
             Text(
-              'ETS Live Malaysia',
+              'KTMB Live Malaysia',
               style: theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
             Text(
-              'Next ETS arrivals, live train map & delay estimates',
+              'Live trains, station arrivals & delay estimates across Malaysia',
               style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.outline),
             ),
             const SizedBox(height: 20),
@@ -101,9 +101,20 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 children: [
                   Expanded(
-                    child: Text(
-                      _station!.stopName,
-                      style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _station!.stopName,
+                          style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
+                        ),
+                        Text(
+                          'Upcoming KTMB arrivals',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: theme.colorScheme.outline,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   TextButton(
@@ -132,14 +143,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
             const SizedBox(height: 24),
             Text(
-              'Live ETS map',
+              'Live KTMB map',
               style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 8),
             LiveMap(station: _station, api: widget.api),
             const SizedBox(height: 4),
             Text(
-              'Positions refresh every 30s from Malaysia Open API',
+              'All KTMB trains by category · refreshes every 30s',
               style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.outline),
             ),
             const SizedBox(height: 20),

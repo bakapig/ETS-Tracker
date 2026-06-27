@@ -1,6 +1,7 @@
 class Arrival {
   const Arrival({
     required this.tripId,
+    this.serviceNumber,
     required this.routeShortName,
     required this.routeLongName,
     required this.destination,
@@ -14,6 +15,7 @@ class Arrival {
   });
 
   final String tripId;
+  final String? serviceNumber;
   final String routeShortName;
   final String routeLongName;
   final String destination;
@@ -25,9 +27,12 @@ class Arrival {
   final bool isLive;
   final String? vehicleLabel;
 
+  String get displayTrip => serviceNumber ?? tripId;
+
   factory Arrival.fromJson(Map<String, dynamic> json) {
     return Arrival(
       tripId: json['trip_id'] as String,
+      serviceNumber: json['service_number'] as String?,
       routeShortName: json['route_short_name'] as String,
       routeLongName: json['route_long_name'] as String,
       destination: json['destination'] as String,

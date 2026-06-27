@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import router
 from app.config import settings
+from app.http_client import close_http_client
 from app.services.state import app_state
 
 
@@ -14,10 +15,11 @@ async def lifespan(_app: FastAPI):
     await app_state.start_background_tasks()
     yield
     await app_state.stop_background_tasks()
+    await close_http_client()
 
 
 app = FastAPI(
-    title="ETS Live Malaysia API",
+    title="KTMB Live Malaysia API",
     description="Real-time ETS train arrivals for Malaysia (KTMB GTFS)",
     version="0.1.0",
     lifespan=lifespan,
@@ -37,7 +39,7 @@ app.include_router(router)
 @app.get("/")
 async def root():
     return {
-        "name": "ETS Live Malaysia API",
+        "name": "KTMB Live Malaysia API",
         "docs": "/docs",
         "health": "/api/health",
     }

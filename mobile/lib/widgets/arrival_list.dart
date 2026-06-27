@@ -49,7 +49,7 @@ class ArrivalList extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Text(
-          'No upcoming ETS trains in the next 12 hours at this station.',
+          'No upcoming trains in the next 12 hours at this station.',
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Theme.of(context).colorScheme.outline,
@@ -94,7 +94,7 @@ class _ArrivalTile extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'ETS ${arrival.tripId}',
+                      arrival.displayTrip,
                       style: theme.textTheme.titleSmall?.copyWith(
                         color: theme.colorScheme.primary,
                         fontWeight: FontWeight.w600,
@@ -120,11 +120,11 @@ class _ArrivalTile extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: theme.textTheme.bodyMedium,
                 ),
-                if (arrival.vehicleLabel != null)
+                if (arrival.isLive)
                   Text(
-                    arrival.vehicleLabel!,
+                    'Live on map',
                     style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.outline,
+                      color: Colors.amber.shade800,
                     ),
                   ),
               ],

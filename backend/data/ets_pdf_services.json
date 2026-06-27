@@ -1,0 +1,217 @@
+{
+  "source": "Jadual Tren ETS 1 Jun 2026.pdf",
+  "effective": "2026-06-01",
+  "northbound": {
+    "EP9224": {
+      "kl_sentral_departure": "07:20",
+      "direction": "northbound"
+    },
+    "EP9124": {
+      "kl_sentral_departure": "08:05",
+      "direction": "northbound"
+    },
+    "EG9044": {
+      "kl_sentral_departure": "08:55",
+      "direction": "northbound"
+    },
+    "EP9226": {
+      "kl_sentral_departure": "09:55",
+      "direction": "northbound"
+    },
+    "EX9108": {
+      "kl_sentral_departure": "11:40",
+      "direction": "northbound"
+    },
+    "EX9008": {
+      "kl_sentral_departure": "12:00",
+      "direction": "northbound"
+    },
+    "EG9442": {
+      "kl_sentral_departure": "12:16",
+      "direction": "northbound"
+    },
+    "EP9524": {
+      "kl_sentral_departure": "13:00",
+      "direction": "northbound"
+    },
+    "EP9130": {
+      "kl_sentral_departure": "13:40",
+      "direction": "northbound"
+    },
+    "EP9326": {
+      "kl_sentral_departure": "14:10",
+      "direction": "northbound"
+    },
+    "EG9052": {
+      "kl_sentral_departure": "15:00",
+      "direction": "northbound"
+    },
+    "EP9428": {
+      "kl_sentral_departure": "15:40",
+      "direction": "northbound"
+    },
+    "EP9136": {
+      "kl_sentral_departure": "15:55",
+      "direction": "northbound"
+    },
+    "EP9528": {
+      "kl_sentral_departure": "17:05",
+      "direction": "northbound"
+    },
+    "EX9214": {
+      "kl_sentral_departure": "18:00",
+      "direction": "northbound"
+    },
+    "EG9352": {
+      "kl_sentral_departure": "18:22",
+      "direction": "northbound"
+    },
+    "EG9056": {
+      "kl_sentral_departure": "19:05",
+      "direction": "northbound"
+    },
+    "EP9530": {
+      "kl_sentral_departure": "19:20",
+      "direction": "northbound"
+    },
+    "EP9138": {
+      "kl_sentral_departure": "20:15",
+      "direction": "northbound"
+    },
+    "EP9532": {
+      "kl_sentral_departure": "20:40",
+      "direction": "northbound"
+    },
+    "EG9058": {
+      "kl_sentral_departure": "22:00",
+      "direction": "northbound"
+    },
+    "EP9238": {
+      "kl_sentral_departure": "22:50",
+      "direction": "northbound"
+    }
+  },
+  "southbound": {
+    "EG9041": {
+      "kl_sentral_arrival": "07:34",
+      "direction": "southbound"
+    },
+    "EP9523": {
+      "kl_sentral_arrival": "07:55",
+      "direction": "southbound"
+    },
+    "EP9121": {
+      "kl_sentral_arrival": "09:20",
+      "direction": "southbound"
+    },
+    "EP9123": {
+      "kl_sentral_arrival": "10:35",
+      "direction": "southbound"
+    },
+    "EP9323": {
+      "kl_sentral_arrival": "11:10",
+      "direction": "southbound"
+    },
+    "EG9045": {
+      "kl_sentral_arrival": "11:34",
+      "direction": "southbound"
+    },
+    "EG9343": {
+      "kl_sentral_arrival": "12:15",
+      "direction": "southbound"
+    },
+    "EP9223": {
+      "kl_sentral_arrival": "12:45",
+      "direction": "southbound"
+    },
+    "EP9425": {
+      "kl_sentral_arrival": "13:45",
+      "direction": "southbound"
+    },
+    "EG9049": {
+      "kl_sentral_arrival": "14:39",
+      "direction": "southbound"
+    },
+    "EP9225": {
+      "kl_sentral_arrival": "15:10",
+      "direction": "southbound"
+    },
+    "EP9531": {
+      "kl_sentral_arrival": "15:15",
+      "direction": "southbound"
+    },
+    "EX9109": {
+      "kl_sentral_arrival": "16:40",
+      "direction": "southbound"
+    },
+    "EP9533": {
+      "kl_sentral_arrival": "17:35",
+      "direction": "southbound"
+    },
+    "EG9449": {
+      "kl_sentral_arrival": "17:50",
+      "direction": "southbound"
+    },
+    "EX9011": {
+      "kl_sentral_arrival": "17:55",
+      "direction": "southbound"
+    },
+    "EX9209": {
+      "kl_sentral_arrival": "18:40",
+      "direction": "southbound"
+    },
+    "EP9535": {
+      "kl_sentral_arrival": "20:00",
+      "direction": "southbound"
+    },
+    "EP9133": {
+      "kl_sentral_arrival": "20:10",
+      "direction": "southbound"
+    },
+    "EG9055": {
+      "kl_sentral_arrival": "21:34",
+      "direction": "southbound"
+    },
+    "EP9233": {
+      "kl_sentral_arrival": "22:25",
+      "direction": "southbound"
+    },
+    "EP9135": {
+      "kl_sentral_arrival": "22:50",
+      "direction": "southbound"
+    },
+    "terminal_departures": {
+      "IPOH|05:00": "EG9041",
+      "IPOH|06:56": "EP9523",
+      "IPOH|08:11": "EP9121",
+      "IPOH|08:41": "EP9123",
+      "IPOH|09:00": "EP9323",
+      "IPOH|09:36": "EG9045",
+      "IPOH|10:21": "EG9343",
+      "IPOH|11:16": "EP9223",
+      "IPOH|12:05": "EP9425",
+      "IPOH|12:46": "EG9049",
+      "IPOH|14:40": "EP9225",
+      "IPOH|15:10": "EP9531",
+      "IPOH|15:55": "EX9109",
+      "IPOH|16:37": "EP9533",
+      "IPOH|17:46": "EG9449",
+      "IPOH|19:00": "EX9011",
+      "IPOH|20:00": "EX9209",
+      "IPOH|20:26": "EP9535",
+      "BUTTERWORTH|05:15": "EG9041",
+      "BUTTERWORTH|06:30": "EP9523",
+      "BUTTERWORTH|07:00": "EP9121",
+      "BUTTERWORTH|07:50": "EP9123",
+      "BUTTERWORTH|13:05": "EP9223",
+      "BUTTERWORTH|16:05": "EP9225",
+      "BUTTERWORTH|18:45": "EX9109",
+      "PADANG BESAR|07:20": "EG9041",
+      "PADANG BESAR|08:15": "EP9523",
+      "PADANG BESAR|09:45": "EP9121",
+      "PADANG BESAR|12:05": "EP9123",
+      "PADANG BESAR|13:50": "EP9323",
+      "PADANG BESAR|17:00": "EG9045"
+    }
+  }
+}
